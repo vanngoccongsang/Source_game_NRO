@@ -1,0 +1,503 @@
+<html lang="en">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Ngọc Rồng Simon - Server Lâu Dài</title>
+      <link rel="canonical" href="103.178.235.202" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="../hoangvietdung_public/images/logo/win.png">
+      <!-- bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+      <!-- mycss -->
+      <link rel="stylesheet" href="../hoangvietdung_public/css/hoangvietdung.css?hoangvietdung=5646">
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+      <style type="text/css">
+        #hoangvietdung {
+          opacity: 1;
+        }
+        #hoangvietdung2{
+             padding:30px;
+             background-color:rgba(0,0,0,0.3);
+          }
+        #custom-hr {
+          border: none;
+          border-top: 1px solid #000;
+          margin: 10px 0;
+        }
+        #custom-hr2 {
+          border: none;
+          border-top: 1px solid #000;
+          margin: 2px 0;
+        }
+      </style>
+    </head>
+    <body class="girlkun-bg" id="hoangvietdung">
+      <div class="container-md p-1 col-sm-12 col-lg-6" style="background: #CC9966; border-radius: 7px; border: 1px solid #CC9900; box-shadow: 0 0 15px #CC9900;">
+        <style>
+          #snow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: -70;
+          }
+        </style>
+        <div id="snow"></div>
+        <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+          script.onload = function () {
+              particlesJS("snow", {
+                  "particles": {
+                      "number": {
+                          "value": 75,
+                          "density": {
+                              "enable": true,
+                              "value_area": 400
+                          }
+                      },
+                      "color": {
+                          "value": "#FFCC33"
+                      },
+                      "opacity": {
+                          "value": 1,
+                          "random": true,
+                          "anim": {
+                              "enable": false
+                          }
+                      },
+                      "size": {
+                          "value": 3,
+                          "random": true,
+                          "anim": {
+                              "enable": true
+                          }
+                      },
+                      "line_linked": {
+                          "enable": true
+                      },
+                      "move": {
+                          "enable": true,
+                          "speed": 1,
+                          "direction": "top",
+                          "random": true,
+                          "straight": false,
+                          "out_mode": "out",
+                          "bounce": false,
+                          "attract": {
+                              "enable": true,
+                              "rotateX": 300,
+                              "rotateY": 1200
+                          }
+                      }
+                  },
+                  "interactivity": {
+                      "events": {
+                          "onhover": {
+                              "enable": false
+                          },
+                          "onclick": {
+                              "enable": false
+                          },
+                          "resize": false
+                      }
+                  },
+                  "retina_detect": true
+              });
+          }
+          document.head.append(script);
+      });
+  
+  </script>
+  
+        <main>
+          <!-- header -->
+          <div style="background: #ffe8d1; border-radius: 7px; box-shadow: 0px 2px 5px black;" class="pb-1">
+            <!-- logo -->
+            <div style="line-height: 15px;font-size: 12px;padding-right: 5px;margin-bottom: 8px;padding-top: 2px;" class="text-center">
+              <img height="12" src="../hoangvietdung_public/images/icon/12.png" style="vertical-align: middle;">
+              <span class="text-black" style="vertical-align: middle;">Dành cho người chơi trên 12 tuổi. Chơi quá 180 phút mỗi ngày sẽ có hại sức khỏe.</span>
+            </div>
+            <div class="p-xs">
+              <a href="/">
+                <img src="../hoangvietdung_public/images/logo/logo.png" style="display: block;margin-left: auto;margin-right: auto;max-width: 350px;">
+              </a>
+            </div>
+            <!-- download -->
+            <div class="text-center mt-2">
+              <a href="/taive/Public.jar" target="_blank" class="btn btn-download text-white" style="border-radius: 10px; width: 100px;">
+                <i class="fa fa-download"></i> JAVA </a>
+              <a href="/taive/Public.rar" target="_blank" class="btn btn-download text-white m-1" style="border-radius: 10px;width: 100px;">
+                <i class="fa fa-windows"></i> PC </a>
+              <a href="/taive/Public.apk" target="_blank" class="btn btn-download text-white" style="border-radius: 10px;width: 100px;">
+                <i class="fa fa-android"></i> APK </a>
+              <a href="/taive/Public.ipa" target="_blank" class="btn btn-download text-white" style="border-radius: 10px;width: 100px;">
+                <i class="fa fa-apple"></i> IOS </a>
+              <a href="https://zalo.me/g/dsgdse267" target="_blank" class="btn btn-download text-white" style="border-radius: 10px;width: 100px;">
+                <i class="fa fa-group"></i> Zalo </a>
+              <div style="line-height: 15px;font-size: 12px;padding-right: 5px;margin-bottom: 8px;padding-top: 2px;" class="text-center">
+                <span class="text-black" style="vertical-align: middle;">Tải phiên bản phù hợp để trải nghiệm tốt.</span>
+              </div>
+            </div>
+          </div>
+          <!--body-->
+          <div class="col text-center mt-2">
+            <div class="user_name">            </div>  
+            <a href="/dangnhap.html" class="btn btn-action m-1 text-white" style="border-radius: 10px;">
+              <i class="fa fa-sign-in"></i> Đăng nhập </a>
+            <a href="/dangky.html" class="btn btn-action m-1 text-white" style="border-radius: 10px;">
+              <i class="fa fa-user-plus"></i> Đăng ký </a>
+            <a href="/forum.html" class="btn btn-action m-1 text-white" style="border-radius: 10px;">
+              <i class="fa fa-group"></i> Diễn Đàn </a>         </div>        <div class="p-1 mt-1 ibox-content" style="border-radius: 7px; box-shadow: 0px 0px 5px black;">
+            <br>
+            <main>
+              <h1 class="h3 mb-3 font-weight-normal">
+                    <center>Bảng Xếp Hạng Đại Gia</center>
+                </b>
+              </h1>
+              <div class="table-responsive">
+                <div style="line-height: 15px;font-size: 12px;padding-right: 5px;margin-bottom: 8px;padding-top: 2px;" class="text-center">
+                  <span class="text-black" style="vertical-align: middle;">Cập nhật 5 phút 1 lần</span>
+                </div>
+                <table class="table table-hover table-nowrap">
+                  <tbody style="border-color: black;">
+                    <tr>
+                      <th scope="col">Top</th>
+                      <th scope="col">Nhân vật</th>
+                      <th scope="col">Tổng Nạp</th>
+                    </tr>
+                    <tr>
+                                <td><b>#1</b></td>
+                                <td>sonkuku</td>
+                                <td>650,000</td>
+                              </tr><tr>
+                                <td><b>#2</b></td>
+                                <td>iumeo</td>
+                                <td>410,000</td>
+                              </tr><tr>
+                                <td><b>#3</b></td>
+                                <td>soicodoc</td>
+                                <td>200,000</td>
+                              </tr><tr>
+                                <td><b>#4</b></td>
+                                <td>1dam1em1</td>
+                                <td>150,000</td>
+                              </tr><tr>
+                                <td><b>#5</b></td>
+                                <td>qbinhkame</td>
+                                <td>30,000</td>
+                              </tr><tr>
+                                <td><b>#6</b></td>
+                                <td>sasuki</td>
+                                <td>20,000</td>
+                              </tr><tr>
+                                <td><b>#7</b></td>
+                                <td>bigboss</td>
+                                <td>0</td>
+                              </tr><tr>
+                                <td><b>#8</b></td>
+                                <td>ots1st</td>
+                                <td>0</td>
+                              </tr><tr>
+                                <td><b>#9</b></td>
+                                <td>yuiii</td>
+                                <td>0</td>
+                              </tr><tr>
+                                <td><b>#10</b></td>
+                                <td>2312313</td>
+                                <td>0</td>
+                              </tr> 
+                  </tbody>
+                </table>
+              </div>
+              <h1 class="h3 mb-3 font-weight-normal">
+                    <center>Bảng Xếp Hạng Sức Mạnh</center>
+              </h1>
+              <div class="table-responsive">
+                <div style="line-height: 15px;font-size: 12px;padding-right: 5px;margin-bottom: 8px;padding-top: 2px;" class="text-center">
+                  <span class="text-black" style="vertical-align: middle;">Cập nhật 5 phút 1 lần</span>
+                </div>
+                <table class="table table-hover table-nowrap">
+                  <tbody style="border-color: black;">
+                    <tr>
+                      <th scope="col">Top</th>
+                      <th scope="col">Nhân vật</th>
+                      <th scope="col">Sức Mạnh</th>
+                      <th scope="col">Đệ Tử</th>
+                      <th scope="col">Hành Tinh</th>
+                      <th scope="col">Tổng</th>
+                    </tr>
+                                           <tr class="top_1">
+                                      <td>
+                                          <b>#1</b>
+                                      </td>
+                                      <td>
+                                          gohan01                                    </td>
+                                      <td>
+                                          451.0 tỷ                                    </td>
+                                      <td>
+                                          110.4 tỷ                                    </td>
+                                      <td>
+                                          Namec                                    </td>
+                                      <td>
+                                          561.4 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_2">
+                                      <td>
+                                          <b>#2</b>
+                                      </td>
+                                      <td>
+                                          soicodoc                                    </td>
+                                      <td>
+                                          352.9 tỷ                                    </td>
+                                      <td>
+                                          95.4 tỷ                                    </td>
+                                      <td>
+                                          Namec                                    </td>
+                                      <td>
+                                          448.2 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_3">
+                                      <td>
+                                          <b>#3</b>
+                                      </td>
+                                      <td>
+                                          sonkuku                                    </td>
+                                      <td>
+                                          180.5 tỷ                                    </td>
+                                      <td>
+                                          110.6 tỷ                                    </td>
+                                      <td>
+                                          Trái đất                                    </td>
+                                      <td>
+                                          291.1 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_4">
+                                      <td>
+                                          <b>#4</b>
+                                      </td>
+                                      <td>
+                                          sleep                                    </td>
+                                      <td>
+                                          185.2 tỷ                                    </td>
+                                      <td>
+                                          90.2 tỷ                                    </td>
+                                      <td>
+                                          Namec                                    </td>
+                                      <td>
+                                          275.5 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_5">
+                                      <td>
+                                          <b>#5</b>
+                                      </td>
+                                      <td>
+                                          namnamec                                    </td>
+                                      <td>
+                                          150.9 tỷ                                    </td>
+                                      <td>
+                                          80.1 tỷ                                    </td>
+                                      <td>
+                                          Namec                                    </td>
+                                      <td>
+                                          231.0 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_6">
+                                      <td>
+                                          <b>#6</b>
+                                      </td>
+                                      <td>
+                                          vnbinh                                    </td>
+                                      <td>
+                                          115.8 tỷ                                    </td>
+                                      <td>
+                                          111.1 tỷ                                    </td>
+                                      <td>
+                                          Trái đất                                    </td>
+                                      <td>
+                                          226.8 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_7">
+                                      <td>
+                                          <b>#7</b>
+                                      </td>
+                                      <td>
+                                          baotram                                    </td>
+                                      <td>
+                                          129.0 tỷ                                    </td>
+                                      <td>
+                                          81.9 tỷ                                    </td>
+                                      <td>
+                                          Trái đất                                    </td>
+                                      <td>
+                                          210.9 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_8">
+                                      <td>
+                                          <b>#8</b>
+                                      </td>
+                                      <td>
+                                          iumeo                                    </td>
+                                      <td>
+                                          100.7 tỷ                                    </td>
+                                      <td>
+                                          81.3 tỷ                                    </td>
+                                      <td>
+                                          Namec                                    </td>
+                                      <td>
+                                          182.0 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_9">
+                                      <td>
+                                          <b>#9</b>
+                                      </td>
+                                      <td>
+                                          qbinhkame                                    </td>
+                                      <td>
+                                          99.2 tỷ                                    </td>
+                                      <td>
+                                          81.6 tỷ                                    </td>
+                                      <td>
+                                          Trái đất                                    </td>
+                                      <td>
+                                          180.9 tỷ                                    </td>
+                                  </tr>
+                                                          <tr class="top_10">
+                                      <td>
+                                          <b>#10</b>
+                                      </td>
+                                      <td>
+                                          destiny                                    </td>
+                                      <td>
+                                          97.5 tỷ                                    </td>
+                                      <td>
+                                          82.9 tỷ                                    </td>
+                                      <td>
+                                          Namec                                    </td>
+                                      <td>
+                                          180.4 tỷ                                    </td>
+                                  </tr>
+                                   
+                  </tbody>
+                </table>
+              </div>
+              <h1 class="h3 mb-3 font-weight-normal">
+                    <center>Bảng Xếp Hạng Nhiệm Vụ</center>
+              </h1>
+              <div class="table-responsive">
+                <div style="line-height: 15px;font-size: 12px;padding-right: 5px;margin-bottom: 8px;padding-top: 2px;" class="text-center">
+                  <span class="text-black" style="vertical-align: middle;">Cập nhật 5 phút 1 lần</span>
+                </div>
+                <table class="table table-hover table-nowrap">
+                  <tbody style="border-color: black;">
+                    <tr>
+                      <th scope="col">Top</th>
+                      <th scope="col">Nhân vật</th>
+                      <th scope="col">Nhiệm Vụ</th>
+                    </tr>
+                    <tr>
+                                <td><b>#1</b></td>
+                                <td>baotram</td>
+                                <td>31</td>
+                              </tr><tr>
+                                <td><b>#2</b></td>
+                                <td>sonkuku</td>
+                                <td>31</td>
+                              </tr><tr>
+                                <td><b>#3</b></td>
+                                <td>sleep</td>
+                                <td>31</td>
+                              </tr><tr>
+                                <td><b>#4</b></td>
+                                <td>soicodoc</td>
+                                <td>31</td>
+                              </tr><tr>
+                                <td><b>#5</b></td>
+                                <td>admin</td>
+                                <td>30</td>
+                              </tr><tr>
+                                <td><b>#6</b></td>
+                                <td>vnbinh</td>
+                                <td>30</td>
+                              </tr><tr>
+                                <td><b>#7</b></td>
+                                <td>gohan01</td>
+                                <td>28</td>
+                              </tr><tr>
+                                <td><b>#8</b></td>
+                                <td>qbinhkame</td>
+                                <td>28</td>
+                              </tr><tr>
+                                <td><b>#9</b></td>
+                                <td>iumeo</td>
+                                <td>28</td>
+                              </tr><tr>
+                                <td><b>#10</b></td>
+                                <td>soixayda</td>
+                                <td>25</td>
+                              </tr>						</tbody>
+                </table>
+              </div>
+            </main>
+          </div>
+        </main>
+        <div class="modal right fade" id="Noti_Home" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+      <div class="modal-dialog modal-side modal-bottom-right ">
+          <div class="modal-content">
+              <div class="modal-header" style="background-color: #2c2c2c; color: #FFF; text-align: center;">
+                  <img src="../hoangvietdung_public/images/logo/logo.png" style="display: block; margin-left: auto; margin-right: auto; max-width: 250px;">
+              </div>
+              <div class="modal-body">
+              <center><p style="padding: 10px">
+                      <b style="color:red"><u>Thông Báo</u></b><br>
+                      Tham gia Ngọc Rồng Public trên các nền tảng mạng xã hội nhé.!<br><br>
+                      <a href="https://zalo.me/g/dsgdse267" class="btn btn-download" style="border-radius: 10px; color: #FFFFFF;" target="_blank"><b>Box Zalo</b></a>
+                  </p>
+            </center>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('#Noti_Home').modal('show');
+      })
+  </script>
+  <!-- footer -->
+  <footer class="mt-1">
+          <br>
+          <div class="text-center text-black">
+            <script>
+              function getYear() {
+                var date = new Date();
+                var year = date.getFullYear();
+                document.getElementById("currentYear").innerHTML = year;
+              }
+            </script>
+            <body onload="getYear()">
+              <small>
+                <b>Ngọc Rồng Simon</b>
+              </small>
+              <br>
+              <small>
+                <span id="currentYear"></span> © Được Vận Hành Bởi <b>
+                  <u>Mr.Public</u>
+                </b>
+              </small>
+            </body>
+          </div>
+        </footer>
+      </div>
+    </body>		
+  </html>
